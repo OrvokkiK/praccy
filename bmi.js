@@ -60,8 +60,9 @@ function bmicalc(weight, height) {
 
 };
 
-//Palauttaa highlightit valikoiseksi
+//Palauttaa formin alkumuotoon ja  highlightit valkoiseksi
 function reset() {
+    document.querySelector('form').reset();
     console.log(' style reset');
     document.querySelectorAll('.bmi-table tbody tr').forEach(row => {
         row.style.backgroundColor = 'white';
