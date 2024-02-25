@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Kitten in the mirror",
+        "description": "A kitten looking at you in the mirror",
+        "address": "https://placekitten.com/200/300"
+    },
+    {
+        "name": "Hiding kitten",
+        "description": "Kitten Hiding behind a couch",
+        "address": "http://placekitten.com/321/241"
+    },
+    {
+        "name": "Sitting kitten",
+        "description": "A kitten looking at you in the mirror", 
+        "address": "https://placekitten.com/300/300"
+    }
+]

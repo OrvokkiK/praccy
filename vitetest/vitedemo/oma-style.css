@@ -1,0 +1,21 @@
+body {background-color: pink;}
+
+h4 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.cardarea {
+    display: flex;
+    
+}
+
+.card-diary {
+    display: flex;
+}
