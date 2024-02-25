@@ -6,26 +6,35 @@ async function getEntries() {
         const data = await response.json();
 
         const diaryContainer = document.querySelector('.cardarea');
-        diaryContainer.innerHTML = '';
+        //diaryContainer.innerHTML = '';
 
-        // const card = document.querySelector('.card');
+         //const card = document.querySelector('.card');
 
-        const cardImg = document.querySelector('card-img');
+        //const cardImg = document.querySelector('.card-img');
 
-        const cardright = document.querySelector('card-diary');
+        //const cardRight = document.querySelector('.card-diary');
 
 
         data.forEach(item => {
-            const card = document.querySelector('.card');
-            
+            const card = document.createElement('div');
+            card.className = 'card';
+    
 
-            /*const img = document.createElement('img');
+            const cardRight = document.createElement('div');
+            cardRight.className = 'card-diary';
+
+            const cardImg = document.createElement('div');
+            cardImg.className = 'card-img'
+
+
+            const img = document.createElement('img');
             console.log(item.address);
-            image.src =  item.address;
-            image.alt = item.alt;
+            img.src =  item.address;
+            img.alt = item.alt;
 
+            card.appendChild(cardImg)
             cardImg.appendChild(img)
-            card.appendChild(cardImg);*/
+            
             
             const date = document.createElement('p');
             date.textContent = `Date: ${item.day}`;
@@ -33,10 +42,10 @@ async function getEntries() {
             const desc = document.createElement('p');
             desc.textContent = `Description: ${item.description}`;
 
-            console.log('qui!');
+            card.appendChild(cardRight);
 
-            card.appendChild(date);
-            card.appendChild(desc);
+            cardRight.appendChild(date);
+            cardRight.appendChild(desc);
 
             diaryContainer.appendChild(card);
   

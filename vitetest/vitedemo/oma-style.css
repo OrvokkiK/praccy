@@ -7,15 +7,21 @@ h4 {
 }
 
 .card {
+    display: flex;
+    flex-direction: row;
     background-color: white;
     border-radius: 25px;
+    
 }
 
 .cardarea {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
 .card-diary {
     display: flex;
+    flex-direction: column;
 }
