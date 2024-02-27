@@ -18,15 +18,11 @@ document.querySelector('.chuck').addEventListener('click', () => {
     getTheJoke(); 
 });
 
-// document.querySelector('.cats').addEventListener('click', () => {
-//     showPics();
-// });
-
-
-// document.querySelector('.cats').addEventListener('click', () => {
-//     showPics(element); 
-// });
 
 showPics(document.querySelector('.cats'));
 
-getEntries();
+
+
+document.querySelector('.diary').addEventListener('click', () => {
+    getEntries();
+}); 

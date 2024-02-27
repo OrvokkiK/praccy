@@ -1,4 +1,7 @@
-body {background-color: pink;}
+body {
+background-color: pink;
+padding: 10px;
+}
 
 h4 {
     display: block;
@@ -26,4 +29,8 @@ h4 {
 .card-diary {
     display: flex;
     flex-direction: column;
+}
+
+.diary-button{
+    padding: 10px 0px;
 }
