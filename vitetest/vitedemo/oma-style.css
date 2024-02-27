@@ -31,6 +31,15 @@ h4 {
     flex-direction: column;
 }
 
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+
+}
+
+
 .diary-button{
     padding: 10px 0px;
 }
